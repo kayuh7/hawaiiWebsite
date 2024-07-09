@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Macondo&family=Mate:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e53d46ed8e.js" crossorigin="anonymous"></script>
+    
+    <title>Hawaii Home Page</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div id="navmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">History of Hawaii</a>
+            <a href="#">Hawaii Islands</a>
+            <a href="#">Honululu</a>
+            <a href="#">Hilo</a>
+            <a href="#">Lahaina</a>
+        </div>
+        <div id="navbar">
+            <div id="navbtn">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="logo">
+                <h1 id="hawaii">Hawaii</h1>
+                <img src="/assets/logoo.png" alt="logo" id="logo">
+            </div>
+            <div id="searchBar">
+                <input type="search" name="search" id="search" placeholder="Search ... "><button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- INTRODUCTION -->
+    <div id="main">
+        <header>
+            <h1>The Aloha State</h1>
+            <img src="">
+        </header>
+        <section>
+            <h1>Welcome to Hawaii</h1>
+            <p>
+                Hawaii is a tropical paradise and the 50th state of the United States, located in the Pacific Ocean. It consists of eight main islands, with Oahu, Maui, and the Big Island being the most well-known. The state is renowned for its stunning natural beauty, including pristine beaches, lush rainforests, active volcanoes, and vibrant coral reefs. Hawaii's culture is a rich blend of Native Hawaiian traditions, Asian influences, and Western customs, reflected in its music, dance, cuisine, and festivals. The state's capital, Honolulu, is a bustling city on Oahu known for its historic sites like Pearl Harbor, as well as the famous Waikiki Beach. Tourism, agriculture, and military defense are key components of Hawaii's economy. The islands offer a unique and diverse environment, making them a popular destination for visitors seeking adventure, relaxation, and a glimpse into a distinctive and vibrant cultural heritage.
+            </p>
+            <!-- MAP OF HAWAII -->
+            <p>
+                Notable Attractions: 
+                Hawaii offers a plethora of attractions for visitors and residents alike:
+    
+                <ul>
+                    <li>   
+                        Waikiki Beach: Famous for its surfing and vibrant nightlife.
+                    </li>
+                    <li>
+                        Pearl Harbor: A historic site and active naval base with memorials and museums.
+                    </li>
+                    <li>
+                        Hawaii Volcanoes National Park: Home to Kilauea, one of the world's most active volcanoes.
+                    </li>
+                    <li>
+                        Na Pali Coast: Renowned for its dramatic cliffs and lush landscapes.
+                    </li>
+                    <li>
+                        Haleakala National Park: Features the world's largest dormant volcano crater.
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <aside>
+            <h1>Popular Cities</h1>
+            <div class="city">
+                <img src="/assets/honululu.png">
+                <p>Honululu</p>
+                <a href="">Learn More<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="city">
+                <img src="/assets/honululu.png">
+                <p>Hilo</p>
+                <a href="">Learn More<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="city">
+                <img src="/assets/honululu.png">
+                <p>Lahaina</p>
+                <a href="">Learn More<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </aside>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("navmenu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("navbar").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("navmenu").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.getElementById("navbar").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
