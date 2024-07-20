@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Macondo&family=Mate:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e53d46ed8e.js" crossorigin="anonymous"></script>
+    <title>Hilo</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div id="navmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">History of Hawaii</a>
+            <a href="#">Hawaii Islands</a>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="navbar">
+            <div id="navbtn">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="logoBox">
+                <h1 id="hawaii">
+                    <img src="/assets/logo.png" alt="logo" id="logo">
+                    <a href="home.html">Hawaii</a>
+                </h1>
+            </div>
+            <div id="searchBar">
+                <input type="search" name="search" id="search" placeholder="Search ... ">
+                <a href="" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <!-- INTRODUCTION -->
+        <header id="header">
+            <h1 class="citypage">Welcome to <br> <a>Hilo</a></h1>
+            <img src="assets/hilocity.jpg" alt="picture of hilo city" class="citypic">
+        </header>
+        <section class="cityinfo">
+            <p>
+                Hilo is the largest settlement and a census-designated place (CDP) in Hawaii County, located on the northeastern side of the island of Hawaii, commonly known as the Big Island. As of the most recent estimates, Hilo has a population of approximately 45,000 residents. It is classified as urban. Hilo serves as the county seat and is a significant cultural and economic center for the region.
+            </p>
+            <h6>History of Hilo</h6>
+            <p>
+                Hilo has a rich history that dates back to ancient Hawaiian times when it was an important center for trade and culture. The modern town of Hilo developed in the late 19th and early 20th centuries. Hilo was officially incorporated as a city in 1911. 
+            </p>
+            <h6>Economy and Income</h6>
+            <p>
+                Hilo's economy is diverse, with key sectors including agriculture, tourism, education, and government services. The region is known for its production of tropical fruits, macadamia nuts, and orchids. Tourism is also a vital part of Hilo's economy, with visitors attracted to its natural beauty and cultural sites. The median household income in Hilo is approximately $60,000 per year, reflecting the local economy's reliance on both traditional industries and tourism.
+            </p>
+        </section>
+        <aside class="attractions">
+            <h6>Notable Attractions:</h6>
+                <p>
+                    Hilo offers a variety of attractions for visitors and residents:
+                    <ol>
+                        <li>
+                            <b>Liliuokalani Gardens:</b> A beautiful Japanese-style garden located by Hilo Bay.
+                        </li>
+                        <li>
+                            <b>Rainbow Falls:</b> A stunning waterfall located within Wailuku River State Park.
+                        </li>
+                        <li>
+                            <b>Hawaii Volcanoes National Park:</b> Home to Kilauea and Mauna Loa, two of the world's most active volcanoes, located a short drive from Hilo.
+                        </li>
+                        <li>
+                            <b>Imiloa Astronomy Center:</b> An educational center that explores the intersection of Hawaiian culture and astronomy.
+                        </li>
+                        <li>
+                            <b>Hilo Farmers Market:</b> A popular market featuring local produce, crafts, and food.
+                        </li>
+                    </ol>
+                </p>
+        </aside>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("navmenu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("navmenu").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>

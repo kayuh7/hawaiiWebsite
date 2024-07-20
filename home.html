@@ -18,88 +18,189 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">History of Hawaii</a>
             <a href="#">Hawaii Islands</a>
-            <a href="#">Honululu</a>
-            <a href="#">Hilo</a>
-            <a href="#">Lahaina</a>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
         </div>
+    </nav>
+    <div id="main">
         <div id="navbar">
             <div id="navbtn">
                 <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <div id="logo">
-                <h1 id="hawaii">Hawaii</h1>
-                <img src="/assets/logoo.png" alt="logo" id="logo">
+            <div id="logoBox">
+                <h1 id="hawaii">
+                    <img src="/assets/logo.png" alt="logo" id="logo">
+                    <a href="home.html">Hawaii</a>
+                </h1>
             </div>
             <div id="searchBar">
-                <input type="search" name="search" id="search" placeholder="Search ... "><button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" name="search" id="search" placeholder="Search ... ">
+                <a href="" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </div>
-    </nav>
-    <!-- INTRODUCTION -->
-    <div id="main">
-        <header>
-            <h1>The Aloha State</h1>
-            <img src="">
+        <!-- INTRODUCTION -->
+        <header id="header">
+            <h1 id="aloha">The Aloha State</h1>
+            <img src="assets/hawaii.png" alt="picture of hawaii" id="hawaiipic">
         </header>
-        <section>
-            <h1>Welcome to Hawaii</h1>
-            <p>
-                Hawaii is a tropical paradise and the 50th state of the United States, located in the Pacific Ocean. It consists of eight main islands, with Oahu, Maui, and the Big Island being the most well-known. The state is renowned for its stunning natural beauty, including pristine beaches, lush rainforests, active volcanoes, and vibrant coral reefs. Hawaii's culture is a rich blend of Native Hawaiian traditions, Asian influences, and Western customs, reflected in its music, dance, cuisine, and festivals. The state's capital, Honolulu, is a bustling city on Oahu known for its historic sites like Pearl Harbor, as well as the famous Waikiki Beach. Tourism, agriculture, and military defense are key components of Hawaii's economy. The islands offer a unique and diverse environment, making them a popular destination for visitors seeking adventure, relaxation, and a glimpse into a distinctive and vibrant cultural heritage.
-            </p>
-            <!-- MAP OF HAWAII -->
-            <p>
-                Notable Attractions: 
-                Hawaii offers a plethora of attractions for visitors and residents alike:
-    
-                <ul>
-                    <li>   
-                        Waikiki Beach: Famous for its surfing and vibrant nightlife.
-                    </li>
-                    <li>
-                        Pearl Harbor: A historic site and active naval base with memorials and museums.
-                    </li>
-                    <li>
-                        Hawaii Volcanoes National Park: Home to Kilauea, one of the world's most active volcanoes.
-                    </li>
-                    <li>
-                        Na Pali Coast: Renowned for its dramatic cliffs and lush landscapes.
-                    </li>
-                    <li>
-                        Haleakala National Park: Features the world's largest dormant volcano crater.
-                    </li>
-                </ul>
-            </p>
+        <section id="homepage">
+            <div id="left">
+                <h1 id="welcome">Welcome to Hawaii</h1>
+                <p id="info">
+                    Hawaii is a tropical paradise and the 50th state of the United States, located in the Pacific Ocean. It consists of eight main islands, with Oahu, Maui, and the Big Island being the most well-known. The state is renowned for its stunning natural beauty, including pristine beaches, lush rainforests, active volcanoes, and vibrant coral reefs. Hawaii's culture is a rich blend of Native Hawaiian traditions, Asian influences, and Western customs, reflected in its music, dance, cuisine, and festivals. The state's capital, Honolulu, is a bustling city on Oahu known for its historic sites like Pearl Harbor, as well as the famous Waikiki Beach. Tourism, agriculture, and military defense are key components of Hawaii's economy. The islands offer a unique and diverse environment, making them a popular destination for visitors seeking adventure, relaxation, and a glimpse into a distinctive and vibrant cultural heritage.
+                </p>
+                <!-- MAP OF HAWAII -->
+                <img src="assets/hawaii map.jpg" alt="map of hawaii" id="map">
+            </div>
+            <div id="right">
+                <h6>Notable Attractions: </h6>
+                <p>
+                    Hawaii offers a plethora of attractions for visitors and residents alike:
+        
+                    <ul>
+                        <li>   
+                            <b>Waikiki Beach:</b> Famous for its surfing and vibrant nightlife.
+                        </li>
+                        <li>
+                            <b>Pearl Harbor:</b> A historic site and active naval base with memorials and museums.
+                        </li>
+                        <li>
+                            <b>Hawaii Volcanoes National Park:</b> Home to Kilauea, one of the world's most active volcanoes.
+                        </li>
+                        <li>
+                            <b>Na Pali Coast:</b> Renowned for its dramatic cliffs and lush landscapes.
+                        </li>
+                        <li>
+                            <b>Haleakala National Park:</b> Features the world's largest dormant volcano crater.
+                        </li>
+                    </ul>
+                </p>
+            </div>
         </section>
-        <aside>
-            <h1>Popular Cities</h1>
-            <div class="city">
-                <img src="/assets/honululu.png">
-                <p>Honululu</p>
-                <a href="">Learn More<i class="fa-solid fa-angle-right"></i></a>
+        <aside id="stateflower">
+            <h6 class="title">Hawaii Flower</h6>
+            <div id="flowerinfo">
+                <p>
+                    The state flower of Hawaii is the yellow hibiscus, also known as Pua Aloalo or Hibiscus brackenridgei. This vibrant yellow flower was designated as the official state flower in 1988. The yellow hibiscus is native to Hawaii and can be found growing in the wild on several of the Hawaiian islands. The plant is notable for its large, bright blooms and is a symbol of the tropical beauty and unique natural heritage of the Hawaiian Islands.
+                </p>
+                <img src="/assets/hibiscus.jpg" alt="yellow hibiscus" id="flower">
             </div>
-            <div class="city">
-                <img src="/assets/honululu.png">
-                <p>Hilo</p>
-                <a href="">Learn More<i class="fa-solid fa-angle-right"></i></a>
+            <div id="islandflower">
+                <p>
+                    Although, the state flower of Hawaii is the yellow hibiscus. Each of the main Hawaiian Islands has its own designated flower (or in some cases, a plant), which holds special cultural and symbolic significance:
+                </p>
+                <table>
+                    <caption>Main Island Flowers</caption>
+                    <tr>
+                        <th>Island</th>
+                        <th>Flower / Plant</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                    <tr>
+                        <td>Hawai'i Island</td>
+                        <td>'Ōhi'a lehua</td>
+                        <td>The red lehua blossom is associated with the 'ōhi'a tree and is symbolic of Pele, the Hawaiian goddess of volcanoes.</td>
+                        <td><img src="/assets/bigislandflower.png" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>Kaho'olawe</td>
+                        <td>Hinahina</td>
+                        <td>The hinahina plant, with its silvery-gray leaves and small white flowers, is native to coastal areas and represents Kahoolawe.</td>
+                        <td><img src="/assets/hinhina.jpg" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>Kaua'i</td>
+                        <td>Mokihana Berry</td>
+                        <td>The mokihana plant produces fragrant green berries that are often strung into leis. It is known for its distinctive anise-like scent.</td>
+                        <td><img src="/assets/mokihana.png" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>Lāna'i</td>
+                        <td>Kauna'oa</td>
+                        <td>The kaunaoa is a type of native Hawaiian dodder, known for its distinctive yellow and orange strands.</td>
+                        <td><img src="/assets/kaunaoa.jpg" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>Maui</td>
+                        <td>Lokelani</td>
+                        <td>Known for its beauty and fragrance, the lokelani is the only non-native flower designated as an island symbol.</td>
+                        <td><img src="/assets/Lokelani.png" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>Moloka'i</td>
+                        <td>Pua Kukui</td>
+                        <td>The kukui tree, also known as the candlenut tree, is valued for its nuts and oil. The white flowers are symbolic of Molokai.</td>
+                        <td><img src="/assets/kukui.jpg" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>Ni'ihau</td>
+                        <td>Pupu Shells</td>
+                        <td>Rather than a flower, Niihau is symbolized by the unique and precious pupu shells found on its beaches, which are used to make intricate shell leis.</td>
+                        <td><img src="/assets/pupu.jpg" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                    <tr>
+                        <td>O'ahu</td>
+                        <td>Pua'ilima</td>
+                        <td>The golden-yellow ilima flower is often used in leis and holds significance in Hawaiian culture as a symbol of Oahu.</td>
+                        <td><img src="/assets/puailima.jpg" alt="big island flower" class="flowerimg"></td>
+                    </tr>
+                </table>
+
             </div>
-            <div class="city">
-                <img src="/assets/honululu.png">
-                <p>Lahaina</p>
-                <a href="">Learn More<i class="fa-solid fa-angle-right"></i></a>
+        </aside>
+        <aside class="popularcity">
+            <h1 class="title">Popular Cities</h1>
+            <div id="cities">
+                <div class="city">
+                    <img src="/assets/honululu.png" alt="picture of honululu" class="cityimg">
+                    <p>Honolulu</p>
+                    <a href="honolulu.html">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="city">
+                    <img src="/assets/hilo.jpg" alt="picture of hilo" class="cityimg">
+                    <p>Hilo</p>
+                    <a href="hilo.html">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="city">
+                    <img src="/assets/maui.webp" alt="picture of lahaina" class="cityimg">
+                    <p>Lahaina</p>
+                    <a href="lahaina.html">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
             </div>
         </aside>
     </div>
+    <footer>
+        <img src="/assets/logo.png" alt="footer logo" id="footerlogo">
+        <div class="column">
+            <p>Info</p>
+            <a href="home.html">Hawaii</a>
+            <a href="islands.html">Islands of Hawaii</a>
+            <a href="history.html">History of Hawaii</a>
+        </div>
+        <div class="column">
+            <p>Cities</p>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+        </div>
+        <div class="column">
+            <p>Subscribe</p>
+            <p>Get More Information about Hawaii:</p>
+            <input type="email" name="email" placeholder="Enter your email" id="email">
+            <input type="submit">
+        </div>
+    </footer>
     <script>
         function openNav() {
             document.getElementById("navmenu").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
-            document.getElementById("navbar").style.marginLeft = "250px";
         }
         
         function closeNav() {
             document.getElementById("navmenu").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
-            document.getElementById("navbar").style.marginLeft = "0";
         }
     </script>
 </body>

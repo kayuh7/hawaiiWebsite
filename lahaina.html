@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Macondo&family=Mate:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e53d46ed8e.js" crossorigin="anonymous"></script>
+    <title>Lahaina</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div id="navmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">History of Hawaii</a>
+            <a href="#">Hawaii Islands</a>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="navbar">
+            <div id="navbtn">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="logoBox">
+                <h1 id="hawaii">
+                    <img src="/assets/logo.png" alt="logo" id="logo">
+                    <a href="home.html">Hawaii</a>
+                </h1>
+            </div>
+            <div id="searchBar">
+                <input type="search" name="search" id="search" placeholder="Search ... ">
+                <a href="" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <!-- INTRODUCTION -->
+        <header id="header">
+            <h1 class="citypage">Welcome to <br> <a>Lahaina</a></h1>
+            <img src="assets/lahainacity.jpg" alt="picture of lahaina city" class="citypic">
+        </header>
+        <section class="cityinfo">
+            <p>
+                Lahaina is a historic town located on the western coast of Maui, Hawaii with approximately 13,000 residents. It is classified as suburban. Lahaina is renowned for its rich cultural heritage, vibrant arts scene, and beautiful coastal views.
+            </p>
+            <h6>History of Lahaina</h6>
+            <p>
+                Lahaina has a rich historical background. It was once the capital of the Kingdom of Hawaii from 1820 to 1845, before the capital was moved to Honolulu. Lahaina was also a bustling whaling port in the 19th century. Lahaina was incorporated as a city in 1820.
+            </p>
+            <h6>Economy and Income</h6>
+            <p>
+                Lahaina's economy is primarily driven by tourism, which plays a significant role in the town's economic vitality. The town is a popular destination for its historic sites, art galleries, restaurants, and proximity to beautiful beaches and ocean activities. The median household income in Lahaina is approximately $65,000 per year, reflecting the town's reliance on the tourism industry and service-related occupations.
+            </p>
+        </section>
+        <aside class="attractions">
+            <h6>Notable Attractions:</h6>
+                <p>
+                Lahaina offers a variety of attractions for visitors and residents:
+                    <ol>
+                        <li>
+                            <b>Front Street:</b> A bustling thoroughfare lined with shops, galleries, and restaurants, offering scenic views of the ocean.
+                        </li>
+                        <li>
+                            <b>Lahaina Banyan Court Park:</b> Home to one of the largest banyan trees in the United States, planted in 1873.
+                        </li>
+                        <li>
+                            <b>Lahaina Historic District:</b> Features several significant historical sites, including the Baldwin Home Museum and the Lahaina Courthouse.
+                        </li>
+                        <li>
+                            <b>Whale Watching:</b> Lahaina is a popular departure point for whale-watching tours, especially during the humpback whale migration season.
+                        </li>
+                        <li>
+                            <b>Old Lahaina Luau:</b> A traditional Hawaiian luau experience showcasing local cuisine, music, and hula performances.
+                        </li>
+                        <li>
+                            <b>Lahaina Harbor:</b> The harbor is a departure point for various water activities, including snorkeling, scuba diving, and sunset cruises.
+                        </li>
+                    </ol>
+                </p>
+        </aside>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("navmenu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("navmenu").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>
