@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Macondo&family=Mate:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e53d46ed8e.js" crossorigin="anonymous"></script>
-    <title>Honululu</title>
+    
+    <title>Contact Page</title>
 </head>
 <body>
     <!-- NAVIGATION BAR -->
     <nav>
         <div id="navmenu">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.html">Home</a>
             <a href="history.html">History of Hawaii</a>
             <a href="islands.html">Hawaii Islands</a>
             <a href="honolulu.html">Honolulu</a>
@@ -40,47 +40,25 @@
                 <a href="" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </div>
-        <!-- INTRODUCTION -->
-        <header id="header">
-            <h1 class="citypage">Welcome to <br> <a>Honolulu</a></h1>
-            <img src="assets/honululucity.png" alt="picture of honolulu city" class="citypic">
+        <!-- FORM -->
+        <header>
+            <p id="intro">Fill out the form to subscribe to our newsletter to receive more information about Hawaii:</p>
         </header>
-        <section class="cityinfo">
-            <p>
-                Honolulu, the capital and largest city of Hawaii, is located on the southeastern coast of the island of Oahu. As of the most recent estimates, the city's population is approximately 350,000 residents. It is classified as the urban part of Oahu. Known for its beautiful beaches, vibrant culture, and historic landmarks, Honolulu is a major hub for tourism, business, and military defense.
-            </p>
-            <h6>History of Honululu</h6>
-            <p>
-                Honolulu became a major port and trade center by the early 19th century and was officially incorporated as a city in 1907. The city became the capital of the Kingdom of Hawaii in 1845, and it remains the administrative center of the state of Hawaii today.
-            </p>
-            <h6>Economy and Income</h6>
-            <p>
-                Honolulu's economy is diverse, driven by tourism, military defense, and international business. The city serves as a gateway to the Pacific and a significant commercial and financial hub. The median household income in Honolulu is approximately $85,000 per year, reflecting the city's relatively high cost of living compared to the mainland United States.
-            </p>
+        <section>
+            <form>
+                <label for="fname">First name:</label required><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name..." required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required><br>
+                <label for="confirm">Confirm Email:</label><br>
+                <input type="email" id="confirmemail" name="confirm" placeholder="Enter your email..." required><br>
+                <label for="messsage">Any questions or inquiries:</label><br>
+                <textarea name="message" rows="10" cols="50" placeholder="Enter any questions or inquiries..."></textarea><br>
+                <input type="submit" id="submit" onclick=checkEmail()>
+            </form>
         </section>
-        <aside class="attractions">
-            <h6>Notable Attractions:</h6>
-                <p>
-                Honolulu offers a variety of attractions for visitors and residents:
-                    <ol>
-                        <li>
-                            <b>Waikiki Beach:</b> Renowned for its surfing, shopping, dining, and nightlife.
-                        </li>
-                        <li>
-                            <b>Diamond Head:</b> A volcanic crater offering hiking trails and panoramic views of the city and ocean.
-                        </li>
-                        <li>
-                            <b>Pearl Harbor:</b> Historic site with memorials and museums, including the USS Arizona Memorial.
-                        </li>
-                        <li>
-                            <b>Iolani Palace:</b> The only royal palace in the United States, former residence of Hawaiian monarchs.
-                        </li>
-                        <li>
-                            <b>Ala Moana Center:</b> One of the largest open-air shopping centers in the world.
-                        </li>
-                    </ol>
-                </p>
-        </aside>
     </div>
     <footer>
         <img src="/assets/logo.png" alt="footer logo" id="footerlogo">
@@ -101,8 +79,8 @@
             <p>Subscribe to</p>
             <p id="moreinfo">Get More Information about Hawaii:</p>
             <div id="submit">
-                <input type="email" name="email" placeholder="Enter your email" id="email">
-                <input type="submit">
+                <input type="email" name="email" placeholder="Enter your email" id="footeremail">
+                <input type="submit" id="footerbutton">
             </div>
         </div>
     </footer>
@@ -115,6 +93,18 @@
         function closeNav() {
             document.getElementById("navmenu").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
+        }
+
+        function checkEmail() {
+            var email = document.getElementById("email")
+            var confirmEmail = document.getElementById("confirmemail")
+
+            if (email.value !== confirmEmail.value) {
+                confirmEmail.style.borderColor = 'red';
+                alert('Email addresses do not match. Please enter matching email addresses.');
+            } else {
+                alert('Success.');
+            }
         }
     </script>
 </body>

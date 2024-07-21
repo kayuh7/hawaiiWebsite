@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Macondo&family=Mate:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e53d46ed8e.js" crossorigin="anonymous"></script>
+    
+    <title>Hawaii Island Page</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div id="navmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="history.html">History of Hawaii</a>
+            <a href="islands.html">Hawaii Islands</a>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="navbar">
+            <div id="navbtn">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="logoBox">
+                <h1 id="hawaii">
+                    <img src="/assets/logo.png" alt="logo" id="logo">
+                    <a href="home.html">Hawaii</a>
+                </h1>
+            </div>
+            <div id="searchBar">
+                <input type="search" name="search" id="search" placeholder="Search ... ">
+                <a href="" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <!-- INTRODUCTION -->
+        <header>
+            <div id="header">
+                <h1 id="hawaiihistory">The Islands of Hawaii</h1>
+                <img src="assets/islands.webp" alt="picture of islands" id="islandpic">
+            </div>
+        </header>
+        <section class="information" id="history">
+            <p>
+                The Hawaiian archipelago consists of eight main islands, each with its unique geography, culture, and attractions. These islands are:
+            </p>
+            <ol>
+                <li>
+                    <b>Hawaii (The Big Island)</b>
+                    <p>
+                        Geography: The largest of the Hawaiian Islands, Hawaii, commonly referred to as the Big Island, covers an area of 4,028 square miles. It features diverse landscapes, including active volcanoes, black sand beaches, rainforests, and snow-capped mountains.
+                    </p>
+                </li>
+                <li>
+                    <b>Maui</b>
+                    <p>
+                        Geography: Known as the "Valley Isle," Maui is the second-largest island at 727 square miles. It features lush valleys, stunning beaches, and the towering Haleakalā volcano.
+                    </p>
+                </li>
+                <li>
+                    <b>Oahu</b>
+                    <p>
+                        Geography: Oahu, the third-largest island at 597 square miles, is known as "The Gathering Place." It is the most populous island and the economic and political center of Hawaii.
+                    </p>
+                </li>
+                <li>
+                    <b>Kauai</b>
+                    <p>
+                        Geography: Known as the "Garden Isle," Kauai is the fourth-largest island, covering 552 square miles. It is renowned for its lush landscapes, dramatic cliffs, and scenic beauty.
+                    </p>
+                </li>
+                <li>
+                    <b>Molokai</b>
+                    <p>
+                        Geography: Molokai, the fifth-largest island, covers 260 square miles and is known as the "Friendly Isle." It has a rural, laid-back atmosphere with strong ties to Native Hawaiian culture.
+                    </p>
+                </li>
+                <li>
+                    <b>Lanai</b>
+                    <p>
+                        Geography: Lanai, the sixth-largest island, is known as the "Pineapple Isle" due to its history as a pineapple plantation. It covers 140 square miles and offers a mix of luxury and seclusion.
+                    </p>
+                </li>
+                <li>
+                    <b>Niihau</b>
+                    <p>
+                        Geography: Niihau is known as the "Forbidden Isle" and is privately owned. It covers 69 square miles and has a small population living a traditional lifestyle.
+                    </p>
+                </li>
+                <li>
+                    <b>Kaholawe</b>
+                    <p>
+                        Geography: The smallest of the main Hawaiian Islands, Kahoolawe covers 45 square miles. It is uninhabited and has a rugged, arid landscape.
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <aside id="link">
+            <p>
+                Learn more about Hawaii on this website: 
+                <a href="https://www.gohawaii.com/" target="_blank">www.gohawaii.com</a>
+            </p>
+        </aside>
+    </div>
+    <footer>
+        <img src="/assets/logo.png" alt="footer logo" id="footerlogo">
+        <div class="column">
+            <p>Info</p>
+            <a href="home.html">Hawaii</a>
+            <a href="islands.html">Islands of Hawaii</a>
+            <a href="history.html">History of Hawaii</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="column">
+            <p>Cities</p>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+        </div>
+        
+        <div class="column">
+            <p>Subscribe to</p>
+            <p id="moreinfo">Get More Information about Hawaii:</p>
+            <div id="submit">
+                <input type="email" name="email" placeholder="Enter your email" id="email">
+                <input type="submit">
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("navmenu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("navmenu").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>

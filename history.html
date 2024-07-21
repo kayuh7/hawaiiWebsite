@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Macondo&family=Mate:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e53d46ed8e.js" crossorigin="anonymous"></script>
+    
+    <title>Hawaii History Page</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div id="navmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="history.html">History of Hawaii</a>
+            <a href="islands.html">Hawaii Islands</a>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="navbar">
+            <div id="navbtn">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="logoBox">
+                <h1 id="hawaii">
+                    <img src="/assets/logo.png" alt="logo" id="logo">
+                    <a href="home.html">Hawaii</a>
+                </h1>
+            </div>
+            <div id="searchBar">
+                <input type="search" name="search" id="search" placeholder="Search ... ">
+                <a href="" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <!-- INTRODUCTION -->
+        <header>
+            <div id="header">
+                <h1 id="hawaiihistory">The History of Hawaii</h1>
+                <img src="assets/history.jpeg" alt="picture of historic hawaii" id="historypic">
+            </div>
+            <p class="information">
+                Hawaii's history is a rich tapestry of indigenous culture, exploration, and significant political change. The archipelago's history can be divided into several key periods: ancient Polynesian settlement, the Kingdom of Hawaii, the period of Western influence and the overthrow of the monarchy, annexation by the United States, and statehood.
+            </p>
+        </header>
+        <section class="information" id="history">
+            <h6 class="title">
+                Ancient Polynesian Settlement
+            </h6>
+            <p>
+                The Hawaiian Islands were first settled by Polynesians who navigated across the Pacific Ocean in canoes, arriving around 1,500 years ago. These early settlers brought with them plants, animals, and their rich culture, establishing the foundations of Hawaiian society. They developed a complex system of agriculture and aquaculture, and their society was organized into chiefdoms, ruled by ali'i (chiefs).
+            </p>
+            <h6 class="title">
+                The Kingdom of Hawaii
+            </h6>
+            <p>
+                In 1778, British explorer Captain James Cook became the first European to visit Hawaii. His arrival marked the beginning of increased interaction between Hawaiians and Europeans. In the early 19th century, King Kamehameha I successfully unified the Hawaiian Islands, establishing the Kingdom of Hawaii in 1810. This period saw the introduction of Western technology, trade, and Christianity. Missionaries arrived and had a significant impact on Hawaiian society, including the establishment of schools and the introduction of a written Hawaiian language.
+            </p>
+            <h6 class="title">
+                Western Influence and Overthrow of the Monarchy
+            </h6>
+            <p>
+                Throughout the 19th century, Hawaii became increasingly influenced by Western powers. The sugar industry grew rapidly, leading to economic and political changes. Many foreigners, particularly Americans, acquired large tracts of land and became influential in Hawaiian affairs. In 1887, a group of these foreigners forced King Kalakaua to sign the Bayonet Constitution, which significantly reduced the monarchy's power. In 1893, Queen Liliuokalani, the last reigning monarch of Hawaii, was overthrown by a group of American and European businessmen with the support of the U.S. military. The coup led to the establishment of a provisional government, which sought annexation by the United States. Despite resistance from Native Hawaiians and Queen Liliuokalani, Hawaii was annexed by the United States in 1898.
+            </p>
+            <h6 class="title">
+                Annexation and Statehood
+            </h6>
+            <p>
+                Hawaii was annexed as a U.S. territory in 1898, largely due to its strategic location in the Pacific Ocean. During World War II, Hawaii played a crucial role, particularly after the attack on Pearl Harbor on December 7, 1941, which led the United States into the war. The islands became a critical military base for the U.S. during the war. After the war, the movement for statehood gained momentum. On August 21, 1959, Hawaii became the 50th state of the United States following a statehood referendum in which the majority of Hawaiian residents voted in favor of becoming a state.
+            </p>
+            <h6 class="title">
+                Modern Hawaii
+            </h6>
+            <p>
+                Today, Hawaii is a melting pot of cultures, with significant influences from Native Hawaiian, Asian, and Western traditions. The state is known for its unique cultural heritage, beautiful landscapes, and as a major tourist destination. Efforts to preserve and promote Native Hawaiian culture and language continue, reflecting the islands' rich history and diverse population. Hawaii's history is marked by its transformation from a series of independent chiefdoms to a unified kingdom, then to a territory and finally a state within the United States, all while maintaining a distinct and vibrant cultural identity.
+            </p>
+        </section>
+        <aside>
+            <img src="/assets/timeline.jpg" id="timeline" alt="timeline of the history of hawaii">
+        </aside>
+    </div>
+    <footer>
+        <img src="/assets/logo.png" alt="footer logo" id="footerlogo">
+        <div class="column">
+            <p>Info</p>
+            <a href="home.html">Hawaii</a>
+            <a href="islands.html">Islands of Hawaii</a>
+            <a href="history.html">History of Hawaii</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="column">
+            <p>Cities</p>
+            <a href="honolulu.html">Honolulu</a>
+            <a href="hilo.html">Hilo</a>
+            <a href="lahaina.html">Lahaina</a>
+        </div>
+        
+        <div class="column">
+            <p>Subscribe to</p>
+            <p id="moreinfo">Get More Information about Hawaii:</p>
+            <div id="submit">
+                <input type="email" name="email" placeholder="Enter your email" id="email">
+                <input type="submit">
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("navmenu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("navmenu").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>

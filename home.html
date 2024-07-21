@@ -16,11 +16,13 @@
     <nav>
         <div id="navmenu">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">History of Hawaii</a>
-            <a href="#">Hawaii Islands</a>
+            <a href="home.html">Home</a>
+            <a href="history.html">History of Hawaii</a>
+            <a href="islands.html">Hawaii Islands</a>
             <a href="honolulu.html">Honolulu</a>
             <a href="hilo.html">Hilo</a>
             <a href="lahaina.html">Lahaina</a>
+            <a href="contact.html">Contact Us</a>
         </div>
     </nav>
     <div id="main">
@@ -155,18 +157,24 @@
             <div id="cities">
                 <div class="city">
                     <img src="/assets/honululu.png" alt="picture of honululu" class="cityimg">
-                    <p>Honolulu</p>
-                    <a href="honolulu.html">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                    <div>
+                        <p>Honolulu</p>
+                        <a href="honolulu.html" class="learn">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
                 </div>
                 <div class="city">
                     <img src="/assets/hilo.jpg" alt="picture of hilo" class="cityimg">
-                    <p>Hilo</p>
-                    <a href="hilo.html">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                    <div>
+                        <p>Hilo</p>
+                        <a href="hilo.html" class="learn">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
                 </div>
                 <div class="city">
                     <img src="/assets/maui.webp" alt="picture of lahaina" class="cityimg">
-                    <p>Lahaina</p>
-                    <a href="lahaina.html">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                    <div>
+                        <p>Lahaina</p>
+                        <a href="lahaina.html" class="learn">Learn More<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
                 </div>
             </div>
         </aside>
@@ -178,6 +186,7 @@
             <a href="home.html">Hawaii</a>
             <a href="islands.html">Islands of Hawaii</a>
             <a href="history.html">History of Hawaii</a>
+            <a href="contact.html">Contact Us</a>
         </div>
         <div class="column">
             <p>Cities</p>
@@ -185,11 +194,14 @@
             <a href="hilo.html">Hilo</a>
             <a href="lahaina.html">Lahaina</a>
         </div>
+        
         <div class="column">
-            <p>Subscribe</p>
-            <p>Get More Information about Hawaii:</p>
-            <input type="email" name="email" placeholder="Enter your email" id="email">
-            <input type="submit">
+            <p>Subscribe to</p>
+            <p id="moreinfo">Get More Information about Hawaii:</p>
+            <div id="submit">
+                <input type="email" name="email" placeholder="Enter your email" id="email">
+                <input type="submit">
+            </div>
         </div>
     </footer>
     <script>
